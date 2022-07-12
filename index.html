@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TributeSite</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/clouds/2x/tribal-symbols.png">
+    <style>
+
+    .bodycontener{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container
+    {
+            width: 100%;
+            margin: auto;
+            margin-top: 20px;
+            height: auto;
+            background-color: #80808017;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    }
+    .container button{
+        margin: auto;
+        margin-top: 22px;
+        text-align: center;
+        padding: 18px;
+        padding-left: 80px;
+        padding-right: 80px;
+        display: block;
+        font-size: 20px;
+        border: 0;
+        background-color: #2d0b00;
+        color: white;
+        border-radius: 32px;
+    }
+    .container button a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .poster{
+        width: 1778px;
+        height: 500px;
+    }
+
+    .Heading{
+            color: rgb(255, 255, 255); 
+            position: absolute; 
+            top: 30%; 
+            width: 100%; 
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .mainheading{
+        color-scheme: 10px;
+        top: 30%; 
+        width: 100%; 
+        text-align: center;
+        font-size: 50px;
+        font-family: fantasy;
+        font-weight: 1000px;
+    }
+
+    .infocont{
+        width: 22%;
+        height: auto;
+        background: linear-gradient(to top, #020326, #5b3333);
+        margin: 23px;
+        margin-top: 20px;
+        padding-top: 24px;
+        border: 3px solid #00000017;
+        border-radius: 10px;
+        float: left;
+    }
+    .Timlee{
+        height: 220px;
+        display: block;
+        margin:auto;
+        margin-top:-4px;
+        clip-path: circle();
+    }
+    .loveoneinfo{
+        color: #ccc;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+    }
+    .infocont ul li{
+        color: #ccc;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+    }
+    .name{
+        font-size: 25px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        color: #ccc;
+        text-align: center;
+
+    }
+    .nevegation{
+        font-family: Helvetica, sans-serif;
+        font-weight: 500;
+        width: 101%;
+        height: 100px;
+        background: linear-gradient(to right, hsl(231, 100%, 12%), #2d0b00);
+        color: white;
+        font-size: 21px;
+        margin-top: -50px;
+    }
+
+    .nevegatio-left{
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        
+    }
+    .nevegatio-right{
+        float: right;
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+    .nevegatio-right li{
+        padding-right: 20px; 
+        color: #fff;
+    }
+    .nevegatio-right li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .nevegatio-left img{
+        width: 240px;
+        margin-bottom: 45px;    
+        position: absolute;
+        margin-top: -58px;
+    }
+    .search{
+        font-size: 20px;
+        width: 230px;
+        height: 28px;
+        border-radius: 50px;
+    }
+    .nevegation ul li{
+        list-style-type: none;
+        display: inline;
+    }
+    select {
+            margin-left: 33px;
+            width: 204px;
+            height: 39px;
+            border: 0;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .footer{
+            width: 100%;
+            height:250px;
+            background: linear-gradient(to right, #00093c, #2d0b00);
+            position: sticky;
+            color: #fff;
+            top: 100px;
+            margin-top: auto;
+            padding: 100px,30px;
+            border-top-left-radius: 120px;
+            font-size: 15px;
+        }
+        .row{
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .col{
+            flex-basis: 20%;
+            padding: 10px;
+            padding-top: 15px;
+        }
+        .logo{
+
+            width: 120px;
+            margin-bottom: 45px;
+            padding-top: 35px;
+        }
+        .col h3{
+            width: fit-content;
+            margin-bottom: 26px;
+            position: relative;
+        }
+        .email-id{
+            width: 100px;
+            border-bottom: 1px solid#ccc;
+            margin: 20px 0px;
+        }
+        .col ul li{
+            list-style-type: none;
+            margin-bottom: 8px;
+        }
+        .col ul li a{
+            text-decoration: none;
+            color: #ccc;
+        }
+        .form{
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 10px solid#ccc;
+            margin-bottom: 50px;
+        }
+        .input{
+            width: 175px;
+            color: white;
+            height: 20px;
+        }
+        .form input{
+            background: transparent;
+        }
+        .fa-envelope{
+            width: 10px;
+        }
+       .fa-brands{
+        width: 25px;
+        text-align: center;
+        height: 25px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #000;
+        background: #fff;
+        margin-right: 3px;
+        cursor: pointer;
+        margin-top: 9%;
+       }
+       
+       .wathvideo{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 3px;
+        margin-bottom: -13px;
+        font-family: inherit;
+        color: #00093c;
+       }
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/4b3026490f.js" ></script>
+<body class="bodycontener">
+    <div class="container">
+
+        <div class="nevegation">
+
+            <ul class="nevegatio-left">
+                <img src="text1442.png" alt="loadding..">
+            </ul>
+            <ul class="nevegatio-right">
+                <li><a href="#"> Trabut Page</a></li>
+                <li><a href="#">Events & Services</a></li>
+                <input class="search" type="search" placeholder="search">
+            </ul>
+        </div>
+       
+        <div class="MainBox"></div>
+
+        <img class="poster" src="space.jpg" alt="Loadding....">
+
+        <p class="mainheading">LETS GIVE A TRIBUTE TO OUR LOVES ONCE</p>
+
+        <h1 class="Heading"> Join the people who have gathered with their communities to celebrate the life of their loved ones</h1>
+    <div>
+        <div>
+            <p class="wathvideo">See how it works</p>
+            <button ><a href="">Watch Video</a></button>
+            
+        </div>
+        <!--Tim Berners-lee inFormation-->
+        <div class="infocont">
+            <img class="Timlee" src="https://live.staticflickr.com/517/20083381321_e9f89c0e35_m.jpg" style="user-select: auto;"alt="Tim Berners-lee">
+            <h3 class="name">Dr APJ Abdul Kalam</h3>
+           
+            <p class="loveoneinfo" style="margin: 15px; line-height: 1.5; text-align: center;">
+                <ul>
+                    <li><strong>1931 :</strong> Born to a Tamil Muslim family in the pilgrimage centre of Rameswaram on Pamban Island, then in the Madras Presidency and now in the State of Tamil Nadu.</li>
+                    <li><strong>1954 :</strong> After completing his education at the Schwartz Higher Secondary School, Ramanathapuram, Kalam went on to attend Saint Joseph's College, Tiruchirappalli, then affiliated with the University of Madras, from where
+                      he graduated in physics</li>
+                    <li><strong>1955 :</strong> He moved to Madras to study aerospace engineering in Madras Institute of Technology.</li>
+                    <li><strong>1960 :</strong> After graduating from the Madras Institute of Technology, Kalam joined the Aeronautical Development Establishment of the Defence Research and Development Organisation (DRDO) as a scientist where he started his career
+                      by designing a small hovercraft, but remained unconvinced by his choice of a job at DRDO.</li>
+                    <li><strong>1969 :</strong> Kalam was transferred to the Indian Space Research Organisation (ISRO) where he was the project director of India's first Satellite Launch Vehicle (SLV-III) which successfully deployed the Rohini satellite in near-earth
+                      orbit in July 1980.</li>
+                    <li><strong>1992 :</strong> Kalam started to serve as the Chief Scientific Adviser to the Prime Minister and the Secretary of the Defence Research and Development Organisation. It was this time when the the Pokhran-II nuclear tests were conducted
+                      which he played an intensive political and technological role.</li>
+                    <li><strong>2002 :</strong> Kalam served as the 11th President of India, succeeding K. R. Narayanan. He won the 2002 presidential election with an electoral vote of 922,884, surpassing the 107,366 votes won by Lakshmi Sahgal. His term lasted
+                      from 25 July 2002 to 25 July 2007.</li>
+                    <li><strong>2012 :</strong> Kalam launched a programme for the youth of India called the <em>What Can I Give Movement</em>, with a central theme of defeating corruption.</li>
+                    <li>
+                    <li><strong> 2015:</strong>The People's President passes away while doing what he loved the most, addressing students.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="infocont">
+            <img class="Timlee" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnMmAQFqreXLxgQbFKatfDVPjoLpOj2PFwA&usqp=CAU" style="user-select: auto;"alt="Tim Berners-lee">
+            <h3 class="name">Tim Berners-lee</h3>
+            <ul>
+                <li>Sir Tim Berners-Lee invented the World Wide Web in 1989.</li>
+            </ul>
+            <p class="loveoneinfo" style="margin: 15px; line-height: 1.5; text-align: center;">
+                <ul>
+                    <li>1955: Born in London England. To parents Conway Berners Lee and Mary Lee Woods.</li>
+                    <li> <strong>1963 to 1973:</strong>  Went to Emanual School London from 1969 to 1973</li>
+                    <li> <strong> 1973 to 1976:</strong> 1973 to 1976 graduated at the Queens College, Oxford university England where he recieved 1st class degree in physics</li>
+                    <li> <strong>1980:</strong>  Tim got a contract job as a software consultant in a company called CERN. He created the idea of sharing ideas quickly by a system called Enquire (this is similar to the world wide web).</li>
+                    <li> <strong>1981:</strong>  Started in a new job called John Pooles image computer systems. This gave him experience in computer networking.</li>
+                    <li> <strong>1984:</strong>  He went back to work at CERN with a permanent persition.</li>
+                    <li> <strong>1989:</strong>  Tim saw that he could join a company called CERN which is the largest internet node in Europe.</li>
+                    <li> <strong>1991:</strong>  First WebsiteFirst website was built at CERN and put online on the 6th August.</li>
+                    <li> <strong>1994:</strong>   he became one of 6th members of the World Wide Web. They decided to improve the standards and allow anyone to be able to access freely.</li>
+                </ul>
+                </p>
+        </div>
+
+        <div class="infocont">
+            <img class="Timlee" src="https://static.toiimg.com/thumb/56933883.cms?width=170&height=240" style="user-select: auto;"alt="Tim Berners-lee">
+            <h3 class="name">Lata Mangeshkar</h3>
+            <ul>
+            </ul>
+            <p class="loveoneinfo" style="margin: 15px; line-height: 1.5; text-align: center;"> <ul>
+                <li><strong>1929:</strong> Born in Indore, India.</li>
+                <li> <strong>1931 :</strong>   Her father, Pandit Deenanath Mangeshkar, was a classical singer and theater actor. Her mother's name is Shevanti.Lata is the eldest child of her parents. Meena, Asha, Usha and Hridaynath are her siblings in sequence.</li>
+                <li> <strong> 1934:</strong> Mangeshkar took her first lessons from her father. At the age of five</li>
+                <li> <strong>1942:</strong>  T When Mangeshkar was 13, her father died of heart disease.</li>
+                <li> <strong>1943:</strong>  Her first Hindi song was "Mata Ek Sapoot Ki Duniya Badal De Tu" for the Marathi film, Gajaabhaau.</li>
+                <li> <strong>1945:</strong>  Lata moved to Mumbai.She started taking lessons in Hindustani classical music from Ustad Amanat Ali Khan.</li>
+                <li> <strong>1946:</strong>  She sang “Paa Lagoon Kar Jori” for Vasant Joglekar's Hindi-language movie Aap Ki Seva Mein.</li>
+                <li> <strong>1947:</strong>  Following the partition of India in 1947, Ustad Amanat Ali Khan migrated to newly formed Pakistan, so Mangeshkar started to learn classical music under Amanat Khan Devaswale, the nephew of Rajab Ali Khan. Pandit Tulsidas Sharma, a pupil of Ustad Bade Ghulam Ali Khan, also trained her.</li>
+                <li> <strong>2000:</strong>   In 2001, Lata Mangeshkar was awarded Bharat Ratna, India's highest civilian honor. In the same year, she established the Master Deenanath Mangeshkar Hospital in Pune.</li>
+            </ul></p>
+        </div>
+
+        <div class="infocont">
+            <img class="Timlee" src="https://www.tellychakkar.com/sites/www.tellychakkar.com/files/styles/amp_metadata_content_image_min_696px_wide/public/images/story/2013/04/30/dada.jpg?itok=-J-vTLl-;"alt="Tim Berners-lee">
+            <h3 class="name">Dadasaheb Phalke</h3>
+            <p class="loveoneinfo" style="margin: 15px; line-height: 1.5; text-align: center;"> 
+
+                <ul>
+                    <li><b>1870:</b> Born at Tryambakeshwar, 30 km from Nashik, Maharashtra, India</li>
+                    <li><b>1885:</b>Joined Sir J. J. School of Art, Mumbai</li>
+                    <li><b>1890</b> - After passing from J.J. School in 1890, Phalke went to the Kala Bhavan, Maharaja
+                        Sayajirao University of Baroda in Vadodara, where he studied sculpture, engineering, drawing,
+                        painting and photography</li>
+                    <li><b>1912:</b>After watching a silent film, The Life of Christ and envisioning Indian gods on the screen, Dadasaheb made his first film, Raja Harishchandra, in 1912; it was first shown publicly on 3 May 1913 at Mumbai's Coronation Cinema, effectively marking the beginning of the Indian film industry</li>
+                    <li><b>1913:</b> Made Mohini Bhasmasur & Movie was shown publicly on 3 May 1913 at Mumbai's Coronation Cinema</li>
+                    <li><b>1914:</b>Made Satyavan Savitri</li>
+                    <li><b>1917:</b>  Made Lanka Dahan</li>
+                    <li><b>1919:</b> Made Kaliya Mardan</li>
+                    <li><b>1920:</b> Resigned from Hindustan Films which he formed in partnership with five businessmen from Mumba</li>
+                    <li><b>1923:</b> Made Buddhadev</li>
+                    <li><b>1932:</b>Made Setu Bandhan</li>
+                    <li><b>1937:</b> Made Gangavataran and retired to Nashik</li>
+                    <li><b>1944:</b> We lost the father of Indian cinema after his death</li>
+                    .</p>
+                </ul>
+        </div>
+    </div>        
+</div> 
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col"> 
+                <img src="logo.png" class="logo">
+                <p>This is page for all over love ones who we want gave Tribute and Sharing there Good Life with people and remembrint till end</p>
+            </div>
+
+            <div class="col">
+                <h3>Office</h3>
+                <p>Eternity Mall, Variety Square, Sitabuldi, Nagpur, Maharashtra 440012</p>
+                <p class="email-id">sw750978@gmail.com</p>
+                <h4>+91-1234567890</h4>
+            </div>
+
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>NewsLatter</h3>
+                <form>
+                    <input class="input" type="email" placeholder="Enter Your Email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+
+                    <div class="Socil-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>
